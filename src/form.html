@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form to sign up for LSMusic</h1>
+    <form
+        action="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/src/index.html"
+        method="post">
+        <label>Email: </label><input type="email" name="email"> <br>
+        <label>Birthday: </label><input type="date" name="birthday"> <br>
+        <label>Gender: </label><br>
+        <input type="radio" name="which_item" value="item1"> Male <br>
+        <input type="radio" name="which_item" value="item2"> Female <br>
+        <input type="radio" name="which_item" value="item3"> Prefer not to say <br>
+        <label>Type your favourite color: </label><input type="text" name="favcolor" id="favcolor"
+            placeholder="Red"><br>
+        <label>Select your favourite music genre: </label><br>
+        <select name="musicgenre" id="musicgender">
+            <option value="irem1">Pop</option>
+            <option value="irem2">Rock</option>
+            <option value="irem3">Jazz</option>
+            <option value="irem4">Electronic</option>
+            <option value="irem5">Hip Hop</option>
+        </select><br>
+        <label>Starting volume level: </label><input type="number" placeholder="8" id="numberselect" name="numberselect"
+            min="1" max="10" /><br>
+        <input type="checkbox" name="termsandconditions" value="termsandconditions"> I agree to these <a
+            href="https://github.com/xmartlabs/projecthub-landing/blob/master/terms-and-conditions.html"
+            target="_blank">Terms
+            and Conditions</a><br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
