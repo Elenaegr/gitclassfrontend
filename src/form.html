@@ -11,15 +11,17 @@
     <h1>Form to sign up for LSMusic</h1>
     <form
         action="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/src/index.html"
-        method="post">
-        <label>Email: </label><input type="email" name="email"> <br>
-        <label>Birthday: </label><input type="date" name="birthday"> <br>
+        method="post" enctype="multipart/form-data">
+        <label for="email">Email: </label><input type="email" name="email" id="email"> <br>
+        <label for="birthday">Birthday: </label><input type="date" name="birthday" id="birthday"> <br>
         <label>Gender: </label><br>
         <input type="radio" name="which_item" value="item1"> Male <br>
         <input type="radio" name="which_item" value="item2"> Female <br>
         <input type="radio" name="which_item" value="item3"> Prefer not to say <br>
         <label>Type your favourite color: </label><input type="text" name="favcolor" id="favcolor"
             placeholder="Red"><br>
+        <label for="colorpicker">Color Picker:</label>
+        <input type="color" id="colorpicker" value="#ff0000"><br>
         <label>Select your favourite music genre: </label><br>
         <select name="musicgenre" id="musicgender">
             <option value="irem1">Pop</option>
@@ -34,7 +36,7 @@
             href="https://github.com/xmartlabs/projecthub-landing/blob/master/terms-and-conditions.html"
             target="_blank">Terms
             and Conditions</a><br>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 
