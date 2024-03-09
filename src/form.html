@@ -15,24 +15,28 @@
         <label for="email">Email: </label><input type="email" name="email" id="email"> <br>
         <label for="birthday">Birthday: </label><input type="date" name="birthday" id="birthday"> <br>
         <label>Gender: </label><br>
-        <input type="radio" name="which_item" value="item1"> Male <br>
-        <input type="radio" name="which_item" value="item2"> Female <br>
-        <input type="radio" name="which_item" value="item3"> Prefer not to say <br>
+        <input required type="radio" name="which_item" value="item1"> Male <br>
+        <input required type="radio" name="which_item" value="item2"> Female <br>
+        <input required type="radio" name="which_item" value="item3"> Other <br>
+        <input required type="radio" name="which_item" value="item4"> Prefer not to say <br>
         <label>Type your favourite color: </label><input type="text" name="favcolor" id="favcolor"
             placeholder="Red"><br>
         <label for="colorpicker">Color Picker:</label>
         <input type="color" id="colorpicker" value="#ff0000"><br>
         <label>Select your favourite music genre: </label><br>
         <select name="musicgenre" id="musicgender">
-            <option value="irem1">Pop</option>
-            <option value="irem2">Rock</option>
-            <option value="irem3">Jazz</option>
-            <option value="irem4">Electronic</option>
-            <option value="irem5">Hip Hop</option>
+            <option selected disabled>Select</option>
+            <option value="item1">Pop</option>
+            <option value="item2">Rock</option>
+            <option value="item3">Jazz</option>
+            <option value="item4">Electronic</option>
+            <option value="item5">Hip Hop</option>
         </select><br>
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" name="volume" min="0" max="10" value="8" /><br>
         <label>Starting volume level: </label><input type="number" placeholder="8" id="numberselect" name="numberselect"
             min="1" max="10" /><br>
-        <input type="checkbox" name="termsandconditions" value="termsandconditions"> I agree to these <a
+        <input required type="checkbox" name="termsandconditions" value="termsandconditions"> I agree to these <a
             href="https://github.com/xmartlabs/projecthub-landing/blob/master/terms-and-conditions.html"
             target="_blank">Terms
             and Conditions</a><br>
