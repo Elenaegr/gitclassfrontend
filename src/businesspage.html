@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .portfolio-img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -72,23 +79,23 @@
         <h3>Portfolio</h3>
         <h2>There are success projects created by us</h2>
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/2.jpg"
-            alt="Puppet with night lights" height="150">
+            alt="Puppet with night lights" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/3.jpg"
-            alt="Puppet in a coffee cup" height="150">
+            alt="Puppet in a coffee cup" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/4.jpg"
-            alt="Puppet with candles" height="150">
+            alt="Puppet with candles" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/5.jpg"
-            alt="Puppet reading a book" height="150">
+            alt="Puppet reading a book" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/6.jpg"
-            alt="Pappet sitting on a bench" height="150">
+            alt="Pappet sitting on a bench" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/7.jpg"
-            alt="Puppet nutcracke" height="150">
+            alt="Puppet nutcracke" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/8.jpg"
-            alt="Puppet at night" height="150">
+            alt="Puppet at night" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/9.jpg"
-            alt="Puppet having cookies" height="150">
+            alt="Puppet having cookies" class="portfolio-img">
         <img src="file:///Users/elenagonzalezrabal/Desktop/Curso%20frontend%20La%20Salle/gitclassfrontend/img/10.jpg"
-            alt="Puppet showering" height="150">
+            alt="Puppet showering" class="portfolio-img">
     </section>
     <section>
         <h2>Contact</h2>
@@ -105,7 +112,7 @@
         <address>
             Carrer de Sant Joan<br>
             Phone: <a href="tel:2456-134-321">932902474</a><br>
-            Email Address: <a href="nfo@lasalle.com">info@lasalle.com</a><br>
+            Email Address: <a href="mailto:info@lasalle.com">info@lasalle.com</a><br>
         </address>
     </section>
     <section>
@@ -114,12 +121,11 @@
             <label>Name*: </label><input type="text" name="name" id="name" required><br>
             <label for="email">Email*: </label><input required type="email" name="email" id="email"> <br>
             <label for="phone">Phone: </label><input type="tel" id="phone" name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br>
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" /><br>
             <label for="companyname">Company Name: </label><input type="text" name="companyname" id="companyname"><br>
             <label for="subject">Subject*: </label><input type="text" name="subject" id="subject"><br>
             <label for="message">Message*: </label>
-            <textarea required id="message" name="message" rows="5" cols="33">
-            </textarea><br>
+            <textarea required id="message" name="message" rows="5" cols="33"></textarea><br>
             <button type="submit">Send</button>
         </form>
     </section>
