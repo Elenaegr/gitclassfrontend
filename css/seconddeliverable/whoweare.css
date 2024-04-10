@@ -1,0 +1,97 @@
+/* CSS for the Who We Are section */
+#who-we-are {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subtitle-who-we-are {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+#main-nav a:hover {
+  background-color: #ffffff;
+  color: #5c4888;
+}
+
+.divider {
+  width: 1px;
+  background-color: #dedede;
+  margin: 0 10px;
+}
+
+.right-column,
+.left-column {
+  flex-basis: 48%; /* Adjust the width of the columns */
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* text-align: center;  */
+}
+
+#beerAd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+#beerAd img {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+}
+
+.left-column p,
+.right-column p {
+  width: 100%;
+  text-align: justify;
+}
+
+.float-left {
+  float: left;
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1024px; /* Limiting the width */
+}
+
+#headerimg {
+  /* display: block;  */
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}

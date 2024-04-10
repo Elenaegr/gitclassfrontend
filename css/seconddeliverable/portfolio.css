@@ -1,0 +1,32 @@
+#portfolio {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.portfolio-img {
+  width: 250px;
+  height: 150px;
+}
+
+/* .portfolio-img-container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.portfolio-img:hover {
+  transform: rotate(-10deg);
+  transition-duration: 1s;
+}
+
+#img6 {
+  transition: transform 1s ease;
+}
+
+#img6:hover {
+  transform: rotate(360deg) scale(1);
+  border-radius: 50%;
+}
+
+#img6:not(:hover) {
+  transform: rotate(0deg) scale(1);
+}

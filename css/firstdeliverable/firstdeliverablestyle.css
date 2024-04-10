@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); */
+
+/* Your other CSS styles go here */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  margin: 0; /* Add this to remove the default margin */
+}
+
+body {
+  width: 1024px;
+  display: block;
+}
+
+#headerimg {
+  width: 100%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  /* max-height: 40vh; */
+}
+
+.navbar {
+  margin-top: 0;
+}
+
+/* This ul might need to be modified so not all the ul are purple */
+ul {
+  background-color: #5c4888;
+  font-size: large;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* This anchor might need to be modified so not all the anchors are white */
+a {
+  color: white;
+  text-decoration: none;
+  font-size: normal;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  padding: 20px;
+  /* margin: 1px; */
+  /* width: 100px; */
+  font-size: x-large;
+  line-height: 100%;
+  display: inline-block;
+  /* float: left; */
+}

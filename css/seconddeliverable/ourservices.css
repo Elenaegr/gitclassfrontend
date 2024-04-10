@@ -1,0 +1,67 @@
+/* CSS for the Our Services section */
+#services-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#services-block article {
+  width: 30%; /* Adjust width to fit three articles in a row */
+  margin-bottom: 60px;
+  text-align: justify;
+  display: flex;
+}
+
+#services-block i {
+  color: rgb(92, 72, 136);
+}
+
+#services-block h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #d3d3d3;
+  flex: 0 0 auto;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.service-icon:hover {
+  background-color: #5c4888; /* Change background color on hover */
+  border-color: #5c4888; /* Change border color on hover */
+}
+
+.service-icon:hover i {
+  color: white; /* Change the color of the icon to white on hover */
+}
+
+.service-icon:hover {
+  background-color: #5c4888;
+  border: 4px solid #5c4888;
+  transition: 1s;
+}
+
+.service-icon:hover i {
+  color: #ffffff;
+}
+/* #services-block i:hover {
+  color: rgb(255, 255, 255);
+} */
+
+.service-text {
+  flex: 1 1 auto; /* Allow text to grow to fill remaining space */
+  text-align: left; /* Align text to the left */
+}
+
+.service-icon i {
+  margin: 0;
+  padding: 0;
+}
