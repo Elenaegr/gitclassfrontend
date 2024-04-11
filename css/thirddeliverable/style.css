@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Reset CSS */
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(120, 120, 120);
+}
+
+h2 {
+  color: rgb(72, 72, 72);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: rgb(72, 72, 72);
+}
+
+/* GENERAL STYLES */
+.greysection {
+  background-color: #eeeeee;
+}
+
+/* HEADER SECTION */
+.navbar {
+  background-color: #5c4888;
+}
+
+.nav-link {
+  color: white;
+}
+/* WHO WE ARE SECTION */
+#who-we-are p {
+  text-align: justify;
+}
+
+/* SERVICES SECTION */
+#services p {
+  text-align: justify;
+}
+
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #d3d3d3;
+  flex: 0 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+  align-self: flex-start;
+}
+
+.service-icon i {
+  margin: 0;
+  padding: 0;
+  color: #5c4888;
+}
+
+.service-icon:hover {
+  background-color: #5c4888;
+  border-color: #5c4888;
+  border: 4px solid #5c4888;
+  transition: 1s;
+}
+
+.service-icon:hover i {
+  color: #ffffff;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio-img:hover {
+  transform: rotate(-10deg);
+  transition-duration: 1s;
+}
+
+#img6 {
+  transition: transform 1s ease;
+}
+
+#img6:hover {
+  transform: rotate(360deg) scale(1);
+  border-radius: 50%;
+}
+
+#img6:not(:hover) {
+  transform: rotate(0deg) scale(1);
+}
+
+/* LOCATION SECTION */
+
+.location-map {
+  padding: 1.5px 1.5px;
+  background-color: black;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.address-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* EMAIL US */
+
+#email-us h2 {
+  color: white;
+}
+
+#email-us {
+  background-image: url(../../img/thirddeliverable/map-image.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(64, 0, 128, 0.6);
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.sendbtn {
+  padding: 8px 40px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  width: fit-content;
+  align-self: center;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: rebeccapurple;
+  text-align: right;
+  margin-top: 0;
+  padding: 4px;
+  color: #f2f2f2;
+}
+
+#footer a {
+  color: white;
+}
